@@ -39,6 +39,14 @@ if [ $login_cert_file ];then
 	OPTS="$OPTS -login_region=$login_region"
 fi
 
+if [ $telnet_ip ];then
+	OPTS="$OPTS -telnet_ip=$telnet_ip"
+fi
+
+if [ $telnet_port ];then
+	OPTS="$OPTS -telnet_port=$telnet_port"
+fi
+
 echo "Use Opts $OPTS"
 
 $FUTU_HOME/FutuOpenD $OPTS
