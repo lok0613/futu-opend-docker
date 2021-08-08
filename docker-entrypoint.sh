@@ -5,7 +5,7 @@ FUTU_HOME=${FUTU_HOME:-"/FutuOpenD"}
 console=${console:-0}
 no_monitor=${no_monitor:-1}
 cfg_file=${cfg_file:-"$FUTU_HOME/FutuOpenD.xml"}
-lang=${lang:-chs}
+lang=${lang:-en}
 api_port=${api_port:-11111}
 log_level=${log_level:-no}
 
