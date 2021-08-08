@@ -26,11 +26,6 @@ if [ $login_pwd_md5 ];then
 	OPTS="$OPTS -login_pwd_md5=$login_pwd_md5"
 fi
 
-if [ $login_pwd_md5 -a $login_pwd ];then
-    echo "login_pwd IS NOT EXISTS"
-    exit 100
-fi
-
 if [ $login_cert_file ];then
 	OPTS="$OPTS -login_cert_file=$login_cert_file"
 fi
