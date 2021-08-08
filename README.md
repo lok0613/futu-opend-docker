@@ -22,7 +22,7 @@ In terminal 1,
 ~$ docker run -i -t \
    -e login_account=$FUTU_ACCOUNT \
    -e login_pwd=$FUTU_PASSWORD \
-   -e telnet_host=0.0.0.0 \
+   -e telnet_ip=0.0.0.0 \
    -e telnet_port=222222 \
    -p 11111:11111 \
    -p 222222:222222 \
