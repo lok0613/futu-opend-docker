@@ -1,6 +1,8 @@
 ## futu-opend-docker
 > FutuOpenD in Docker
 
+[![DockerHub Push](https://github.com/lok0613/futu-opend-docker/actions/workflows/push.yml/badge.svg)](https://github.com/lok0613/futu-opend-docker/actions/workflows/push.yml)
+
 ## Setup (for local)
 
 Create a `.env` file
