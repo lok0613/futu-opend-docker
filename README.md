@@ -23,15 +23,15 @@ In terminal 1,
    -e login_account=$FUTU_ACCOUNT \
    -e login_pwd=$FUTU_PASSWORD \
    -e telnet_ip=0.0.0.0 \
-   -e telnet_port=222222 \
+   -e telnet_port=22222 \
    -p 11111:11111 \
-   -p 222222:222222 \
+   -p 22222:22222 \
    lok0613/futu-opend-docker:latest
 ```
 
 In terminal 2,
 ```bash
-~$ telnet 127.0.0.1 222222
+~$ telnet 127.0.0.1 22222
 ~$ > input_phone_verify_code -code=123456
 ```
 
