@@ -26,7 +26,7 @@ In terminal 1,
    -e telnet_port=22222 \
    -p 11111:11111 \
    -p 22222:22222 \
-   lok0613/futu-opend-docker:v5.6.1808
+   lok0613/futu-opend-docker:v5.9.2108
 ```
 
 In terminal 2,
@@ -42,5 +42,5 @@ In terminal 2,
    -e login_account=$FUTU_ACCOUNT \
    -e login_pwd=$FUTU_PASSWORD \
    -p 11111:11111 \
-   lok0613/futu-opend-docker:v5.6.1808
+   lok0613/futu-opend-docker:v5.9.2108
 ```
