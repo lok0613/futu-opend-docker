@@ -5,7 +5,7 @@ RUN sed -i "s@archive.ubuntu.com@mirrors.aliyun.com@g" /etc/apt/sources.list \
 	&& apt-get update \
 	&& apt-get install -y wget procps
 
-ENV SDK_NAME=FutuOpenD_5.6.1808_Ubuntu16.04
+ENV SDK_NAME=FutuOpenD_5.9.2108_Ubuntu16.04
 
 RUN wget -O - https://softwarefile.futunn.com/${SDK_NAME}.tar.gz | tar -xzf - -C / \
 	&& rm -rf /${SDK_NAME}/${SDK_NAME}.AppImage \
