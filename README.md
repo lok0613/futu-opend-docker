@@ -21,7 +21,7 @@ In terminal 1,
 ```bash
 ~$ docker run -i -t \
    -e login_account=$FUTU_ACCOUNT \
-   -e login_pwd=$FUTU_PASSWORD \
+   -e login_pwd_md5=$FUTU_PASSWORD_MD5 \
    -e telnet_ip=0.0.0.0 \
    -e telnet_port=22222 \
    -p 11111:11111 \
@@ -40,7 +40,7 @@ In terminal 2,
 ```bash
 ~$ docker run -i -t \
    -e login_account=$FUTU_ACCOUNT \
-   -e login_pwd=$FUTU_PASSWORD \
+   -e login_pwd_md5=$FUTU_PASSWORD_MD5 \
    -p 11111:11111 \
    lok0613/futu-opend-docker:v5.10.2218
 ```
