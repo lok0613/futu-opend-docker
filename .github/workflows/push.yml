@@ -19,3 +19,5 @@ jobs:
       - run: docker build -t lok0613/futu-opend-docker:${{ github.event.release.tag_name }} .
       - run: docker push lok0613/futu-opend-docker:${{ github.event.release.tag_name }}
 
+      - run: docker tag lok0613/futu-opend-docker:${{ github.event.release.tag_name }} lok0613/futu-opend-docker:latest
+      - run: docker push lok0613/futu-opend-docker:latest
