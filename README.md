@@ -44,3 +44,26 @@ In terminal 2,
    -p 11111:11111 \
    lok0613/futu-opend-docker:v5.10.2218
 ```
+
+### How to deploy futu-opend-docker without SMS
+#### WARNING!!! This maybe a bit RISKY if you deploy it into cloud instances.
+
+1. Validate SMS in your computer
+2. 
+```bash
+cd example
+cp -rf /tmp/F3CNN F3CNN
+cp -rf ~/.com.futunn.FutuOpenD .com.futunn.FutuOpenD
+
+# build
+docker build -t your-image .
+# run
+docker run -i -t \
+   -e login_account=$FUTU_ACCOUNT \
+   -e login_pwd_md5=$FUTU_PASSWORD_MD5 \
+   -e telnet_ip=0.0.0.0 \
+   -e telnet_port=22222 \
+   -p 11111:11111 \
+   -p 22222:22222 \
+   your-image
+```

@@ -1,1 +1,3 @@
 *.env
+**/F3CNN
+**/.com.futunn.FutuOpenD
