@@ -52,6 +52,8 @@ In terminal 2,
 2. 
 ```bash
 cd example
+rm -rf /F3CNN # if exists
+rm -rf .com.futunn.FutuOpenD # if exists
 cp -rf /tmp/F3CNN F3CNN
 cp -rf ~/.com.futunn.FutuOpenD .com.futunn.FutuOpenD
 
@@ -61,9 +63,6 @@ docker build -t your-image .
 docker run -i -t \
    -e login_account=$FUTU_ACCOUNT \
    -e login_pwd_md5=$FUTU_PASSWORD_MD5 \
-   -e telnet_ip=0.0.0.0 \
-   -e telnet_port=22222 \
    -p 11111:11111 \
-   -p 22222:22222 \
-   your-image
+   asia.gcr.io/nimble-furnace-332402/futu-opend-lok:latest
 ```
