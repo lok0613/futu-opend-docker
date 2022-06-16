@@ -64,5 +64,5 @@ docker run -i -t \
    -e login_account=$FUTU_ACCOUNT \
    -e login_pwd_md5=$FUTU_PASSWORD_MD5 \
    -p 11111:11111 \
-   asia.gcr.io/nimble-furnace-332402/futu-opend-lok:latest
+   your-image:latest
 ```
