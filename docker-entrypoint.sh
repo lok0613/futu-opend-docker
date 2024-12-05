@@ -7,9 +7,10 @@ no_monitor=${no_monitor:-1}
 cfg_file=${cfg_file:-"$FUTU_HOME/FutuOpenD.xml"}
 lang=${lang:-en}
 api_port=${api_port:-11111}
-log_level=${log_level:-no}
+log_level=${log_level:-info}
+future_trade_api_time_zone=${future_trade_api_time_zone:-"UTC+8"}
 
-OPTS="-console=$console -no_monitor=$no_monitor -cfg_file=$cfg_file -lang=$lang -api_port=$api_port -log_level=$log_level"
+OPTS="-console=$console -no_monitor=$no_monitor -cfg_file=$cfg_file -lang=$lang -api_port=$api_port -log_level=$log_level -future_trade_api_time_zone=$future_trade_api_time_zone" 
 
 if [ $login_account ];then
 	OPTS="$OPTS -login_account=$login_account"
