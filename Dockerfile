@@ -5,7 +5,7 @@ RUN sed -i "s@archive.ubuntu.com@mirrors.aliyun.com@g" /etc/apt/sources.list \
 	&& apt-get update \
 	&& apt-get install -y wget procps iputils-ping net-tools
 
-ENV SDK_VERSION=7.1.3308
+ENV SDK_VERSION=8.7.4708
 ENV SDK_NAME=FutuOpenD_${SDK_VERSION}_NN_Ubuntu16.04
 
 RUN wget -O - https://softwarefile.futunn.com/${SDK_NAME}.tar.gz | tar -xzf - -C / \
