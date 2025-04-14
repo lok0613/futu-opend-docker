@@ -43,6 +43,9 @@ if [ $telnet_port ];then
 	OPTS="$OPTS -telnet_port=$telnet_port"
 fi
 
+if [ $is_encrypt ]
+	OPTS="$OPTS -rsa_private_key=private_key" # default private key path will be just private_key
+
 echo "Use Opts $OPTS"
 
 $FUTU_HOME/FutuOpenD $OPTS
